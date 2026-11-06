@@ -1,2 +1,3 @@
 {"id": "sample_001", "region": "الغرب", "wilaya": "البيض", "speaker_gender": "ذكر", "speaker_age": 35, "text": "واش راك داير فيها اليوم لاباس", "audio_filepath": "data/audio/sample_001.wav", "status": "raw"}
 {"id": "sample_002", "region": "بوقطب", "wilaya": "البيض", "speaker_gender": "ذكر", "speaker_age": 10, "text": "الله لا يركب فاس على هراوة", "audio_filepath": "data/audio/sample_002.wav", "status": "raw"}
+{"id": "sample_003", "region": "بوقطب", "wilaya": "البيض", "speaker_gender": "ذكر", "speaker_age": 10, "text": "صباحك و رباحك و مائة ناقة في مراحك", "audio_filepath": "data/audio/sample_003.wav", "status": "raw"}
