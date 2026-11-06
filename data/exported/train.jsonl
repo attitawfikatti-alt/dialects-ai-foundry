@@ -1,0 +1,2 @@
+{"id": "sample_003", "region": "بوقطب", "wilaya": "البيض", "speaker_gender": "ذكر", "speaker_age": 10, "text": "صباحك و رباحك و مائة ناقة في مراحك", "audio_filepath": "data/audio/sample_003.wav", "status": "raw"}
+{"id": "sample_002", "region": "بوقطب", "wilaya": "البيض", "speaker_gender": "ذكر", "speaker_age": 10, "text": "الله لا يركب فاس على هراوة", "audio_filepath": "data/audio/sample_002.wav", "status": "raw"}
