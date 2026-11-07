@@ -1,13 +1,45 @@
 {"audio_file": "wavs/sample_16k_000.wav", "duration": 3.0, "transcript": "سيارة", "province": "سكيكدة", "region": "الشرق الجزائري"}
-{"audio_file": "wavs/voice_test_16k_000.wav", "duration": 8.1, "transcript": "أخير من ويلي راسل\nزامي سفنة ويليا مراقب\nكيمانشي\nمهوليليلا محمد راسول الله\nبنا نحدرس", "province": "سكيكدة", "region": "الشرق الجزائري"}
+{"audio_file": "wavs/voice_test_16k_000.wav", "duration": 8.1, "transcript": "أخير من ويلي راسل زامي سفنة ويليا مراقب كيمانشي مهوليليلا محمد راسول الله بنا نحدرس", "province": "سكيكدة", "region": "الشرق الجزائري"}
 {"audio_file": "wavs/voice_test_16k_002.wav", "duration": 8.0, "transcript": "ونرى كيف يمكننا أن نرى هذا المكان؟", "province": "سكيكدة", "region": "الشرق الجزائري"}
-{"audio_file": "wavs/voice_test_16k_003.wav", "duration": 8.0, "transcript": "يخلصوا و يخدم مصر و يفدوا يجيب لي زيكيب مووراة\nالمصر و لم يتعد نسبة الأسغار", "province": "سكيكدة", "region": "الشرق الجزائري"}
-{"audio_file": "wavs/voice_test_16k_006.wav", "duration": 8.0, "transcript": "ونحقنا نهادرو\nالحمد لله نهادرو بحاجة شحال\nنهادرو\nونحن نهادرو", "province": "سكيكدة", "region": "الشرق الجزائري"}
-{"audio_file": "wavs/voice_test_16k_008.wav", "duration": 8.0, "transcript": "ونحصل بالمير\nونحصل بالمير\nالمير زيادة\nدركي عايت الوصول بيس بريزي", "province": "سكيكدة", "region": "الشرق الجزائري"}
-{"audio_file": "wavs/voice_test_16k_009.wav", "duration": 8.0, "transcript": "ويسرح يهدير\nالحديرات على البلدية مكاملترية ويسرح يهدير\nأي لحياة يجري من تونيهدي", "province": "سكيكدة", "region": "الشرق الجزائري"}
-{"audio_file": "wavs/voice_test_16k_010.wav", "duration": 8.0, "transcript": "أعطينا بإمكانكم أن تشاهدوا أحد من السرفات\nسنرغبكم في المدينة ونرغبكم في المدينة\nلكن أريد أن نرغبكم في المدينة\nأعطيكم في المدينة ونرغبكم في المدينة", "province": "سكيكدة", "region": "الشرق الجزائري"}
-{"audio_file": "wavs/voice_test_16k_011.wav", "duration": 8.0, "transcript": "أحزموا بأي دو أحدامة سرفاقش\nيخدمني ما حيبش أخوين سامحنا", "province": "سكيكدة", "region": "الشرق الجزائري"}
-{"audio_file": "wavs/voice_test_16k_012.wav", "duration": 8.0, "transcript": "سيد رواليا، هذه ربما الفوق وشي ملتحت\nعام الموافن يتفرزوا، كلامنا قد روز", "province": "سكيكدة", "region": "الشرق الجزائري"}
-{"audio_file": "wavs/voice_test_16k_015.wav", "duration": 8.0, "transcript": "نعرف على جميك الولي على استصدام تنين\nلم أسمع بها\nإذا يوسمك بنيك\nتصبب النوش على الموطري", "province": "سكيكدة", "region": "الشرق الجزائري"}
-{"audio_file": "wavs/voice_test_16k_016.wav", "duration": 8.0, "transcript": "مصفر كيف تلعب؟ نعم نخلصوص\nستربري مشروع من 2015", "province": "سكيكدة", "region": "الشرق الجزائري"}
-{"audio_file": "wavs/voice_test_16k_018.wav", "duration": 3.94, "transcript": "تفاق عاد يخلص\nوالمسروع من شهرس مئة بالمئة", "province": "سكيكدة", "region": "الشرق الجزائري"}
+{"audio_file": "wavs/voice_test_16k_003.wav", "duration": 8.0, "transcript": "يخلصوا و يخدم مصر و يفدوا يجيب لي زيكيب مووراة المصر و لم يتعد نسبة الأسغار", "province": "سكيكدة", "region": "الشرق الجزائري"}
+{"audio_file": "wavs/voice_test_16k_006.wav", "duration": 8.0, "transcript": "ونحقنا نهادرو الحمد لله نهادرو بحاجة شحال نهادرو ونحن نهادرو", "province": "سكيكدة", "region": "الشرق الجزائري"}
+{"audio_file": "wavs/voice_test_16k_008.wav", "duration": 8.0, "transcript": "ونحصل بالمير ونحصل بالمير المير زيادة دركي عايت الوصول بيس بريزي", "province": "سكيكدة", "region": "الشرق الجزائري"}
+{"audio_file": "wavs/voice_test_16k_009.wav", "duration": 8.0, "transcript": "ويسرح يهدير الحديرات على البلدية مكاملترية ويسرح يهدير أي لحياة يجري من تونيهدي", "province": "سكيكدة", "region": "الشرق الجزائري"}
+{"audio_file": "wavs/voice_test_16k_010.wav", "duration": 8.0, "transcript": "أعطينا بإمكانكم أن تشاهدوا أحد من السرفات سنرغبكم في المدينة ونرغبكم في المدينة لكن أريد أن نرغبكم في المدينة أعطيكم في المدينة ونرغبكم في المدينة", "province": "سكيكدة", "region": "الشرق الجزائري"}
+{"audio_file": "wavs/voice_test_16k_011.wav", "duration": 8.0, "transcript": "أحزموا بأي دو أحدامة سرفاقش يخدمني ما حيبش أخوين سامحنا", "province": "سكيكدة", "region": "الشرق الجزائري"}
+{"audio_file": "wavs/voice_test_16k_012.wav", "duration": 8.0, "transcript": "سيد رواليا، هذه ربما الفوق وشي ملتحت عام الموافن يتفرزوا، كلامنا قد روز", "province": "سكيكدة", "region": "الشرق الجزائري"}
+{"audio_file": "wavs/voice_test_16k_015.wav", "duration": 8.0, "transcript": "نعرف على جميك الولي على استصدام تنين لم أسمع بها إذا يوسمك بنيك تصبب النوش على الموطري", "province": "سكيكدة", "region": "الشرق الجزائري"}
+{"audio_file": "wavs/voice_test_16k_016.wav", "duration": 8.0, "transcript": "مصفر كيف تلعب؟ نعم نخلصوص ستربري مشروع من 2015", "province": "سكيكدة", "region": "الشرق الجزائري"}
+{"audio_file": "wavs/voice_test_16k_018.wav", "duration": 3.94, "transcript": "تفاق عاد يخلص والمسروع من شهرس مئة بالمئة", "province": "سكيكدة", "region": "الشرق الجزائري"}
+{"audio_filepath": "data/skikda/wavs/sample_16k_000.wav", "duration": 3.0, "region": "skikda", "text": "(الأسفة)"}
+{"audio_filepath": "data/skikda/wavs/sample_16k_seg_000.wav", "duration": 3.0, "region": "skikda", "text": "(الأسفة)"}
+{"audio_filepath": "data/skikda/wavs/voice_test_16k_000.wav", "duration": 8.1, "region": "skikda", "text": "وليا خر من ولي رأسر سامي سبن وليا مرأة دي مانجي مهولي للمحمد رسول العليا منها درسل"}
+{"audio_filepath": "data/skikda/wavs/voice_test_16k_002.wav", "duration": 8.0, "region": "skikda", "text": "ونرى قابل هذا"}
+{"audio_filepath": "data/skikda/wavs/voice_test_16k_003.wav", "duration": 8.0, "region": "skikda", "text": "نحن يخلصوا شخو يخدم مصرع يفدوا يجب لي زيكي بموغرى مصرع لم يتحدى نسبة الأسغل"}
+{"audio_filepath": "data/skikda/wavs/voice_test_16k_006.wav", "duration": 8.0, "region": "skikda", "text": "نحقنا نحضروا حمدنا حمدنا حدنا نحضروا حزر شحال أذمس وحديث بلديا نحن نحضروا ماما وكل شحن نمسوري جاي"}
+{"audio_filepath": "data/skikda/wavs/voice_test_16k_008.wav", "duration": 8.0, "region": "skikda", "text": "ونحسر بلواني ونحسر بلواني ونمير"}
+{"audio_filepath": "data/skikda/wavs/voice_test_16k_009.wav", "duration": 8.0, "region": "skikda", "text": "ويجيس بسرع يدير لها يديرت على البلدية مكامات رية بسرع يدير أي لحياة جري من تون يديري"}
+{"audio_filepath": "data/skikda/wavs/voice_test_16k_010.wav", "duration": 8.0, "region": "skikda", "text": "وحن نصف يتوقع نوودي يسطر باني ميذات سنة بغانسكك جيالسم خليل القاني لبسوص راو منه"}
+{"audio_filepath": "data/skikda/wavs/voice_test_16k_011.wav", "duration": 8.0, "region": "skikda", "text": "حزموها ما يدو عدمت سرفاقش بحي بيخدم يخدمني محي بشكل مخويسة محناء"}
+{"audio_filepath": "data/skikda/wavs/voice_test_16k_012.wav", "duration": 8.0, "region": "skikda", "text": "هذا المواتي نقلمي تفرزو"}
+{"audio_filepath": "data/skikda/wavs/voice_test_16k_015.wav", "duration": 8.0, "region": "skikda", "text": "كي تصبنو يصبنو يصبنو يصبنو يصبنو"}
+{"audio_filepath": "data/skikda/wavs/voice_test_16k_016.wav", "duration": 8.0, "region": "skikda", "text": "موشفكي فتلاف نام خمسوز"}
+{"audio_filepath": "data/skikda/wavs/voice_test_16k_018.wav", "duration": 3.94, "region": "skikda", "text": "كفاق عد يخلوز والمصروع من شاهش مئبل مئبل"}
+{"audio_filepath": "data/skikda/wavs/voice_test_16k_seg_000.wav", "duration": 8.1, "region": "skikda", "text": "وليا خر من ولي رأسر سامي سبن وليا مرأة دي مانجي مهولي للمحمد رسول العليا منها درسل"}
+{"audio_filepath": "data/skikda/wavs/voice_test_16k_seg_001.wav", "duration": 8.0, "region": "skikda", "text": "نسكون نحن بشعب بيتيسي هي مدى ميركاز يا خالي بيخلسوش بيخلسوش عناحة هي خي مدوش"}
+{"audio_filepath": "data/skikda/wavs/voice_test_16k_seg_002.wav", "duration": 8.0, "region": "skikda", "text": "ونرى قابل هذا"}
+{"audio_filepath": "data/skikda/wavs/voice_test_16k_seg_003.wav", "duration": 8.0, "region": "skikda", "text": "نحن يخلصوا شخو يخدم مصرع يفدوا يجب لي زيكي بموغرى مصرع لم يتحدى نسبة الأسغل"}
+{"audio_filepath": "data/skikda/wavs/voice_test_16k_seg_004.wav", "duration": 8.0, "region": "skikda", "text": "ان عشوية ان اهدر لك اكمنية ايطار سيامي في الدولة مجخلسو سبحان الله"}
+{"audio_filepath": "data/skikda/wavs/voice_test_16k_seg_005.wav", "duration": 8.0, "region": "skikda", "text": "حواني حيجر من تون يدي حسطة غرف الفيري ونحسطة بيجاب دائرة ونحسطة بالمير رجرة قبل راحا"}
+{"audio_filepath": "data/skikda/wavs/voice_test_16k_seg_006.wav", "duration": 8.0, "region": "skikda", "text": "نحقنا نحضروا حمدنا حمدنا حدنا نحضروا حزر شحال أذمس وحديث بلديا نحن نحضروا ماما وكل شحن نمسوري جاي"}
+{"audio_filepath": "data/skikda/wavs/voice_test_16k_seg_007.wav", "duration": 8.0, "region": "skikda", "text": "ونجر بيستيك نيك ورحشرة قابة ويلم مياه ان شكي جبن موكا ولوجيب ووتعتي برتي تجا سوارد صحبي ميكا مشارن مشارن"}
+{"audio_filepath": "data/skikda/wavs/voice_test_16k_seg_008.wav", "duration": 8.0, "region": "skikda", "text": "ونحسر بلواني ونحسر بلواني ونمير"}
+{"audio_filepath": "data/skikda/wavs/voice_test_16k_seg_009.wav", "duration": 8.0, "region": "skikda", "text": "ويجيس بسرع يدير لها يديرت على البلدية مكامات رية بسرع يدير أي لحياة جري من تون يديري"}
+{"audio_filepath": "data/skikda/wavs/voice_test_16k_seg_010.wav", "duration": 8.0, "region": "skikda", "text": "وحن نصف يتوقع نوودي يسطر باني ميذات سنة بغانسكك جيالسم خليل القاني لبسوص راو منه"}
+{"audio_filepath": "data/skikda/wavs/voice_test_16k_seg_011.wav", "duration": 8.0, "region": "skikda", "text": "حزموها ما يدو عدمت سرفاقش بحي بيخدم يخدمني محي بشكل مخويسة محناء"}
+{"audio_filepath": "data/skikda/wavs/voice_test_16k_seg_012.wav", "duration": 8.0, "region": "skikda", "text": "هذا المواتي نقلمي تفرزو"}
+{"audio_filepath": "data/skikda/wavs/voice_test_16k_seg_013.wav", "duration": 8.0, "region": "skikda", "text": "نعم، نعم، نعم، نعم، نعم، نعم"}
+{"audio_filepath": "data/skikda/wavs/voice_test_16k_seg_014.wav", "duration": 8.0, "region": "skikda", "text": "أسف لك أموريسيا"}
+{"audio_filepath": "data/skikda/wavs/voice_test_16k_seg_015.wav", "duration": 8.0, "region": "skikda", "text": "كي تصبنو يصبنو يصبنو يصبنو يصبنو"}
+{"audio_filepath": "data/skikda/wavs/voice_test_16k_seg_016.wav", "duration": 8.0, "region": "skikda", "text": "موشفكي فتلاف نام خمسوز"}
+{"audio_filepath": "data/skikda/wavs/voice_test_16k_seg_018.wav", "duration": 3.94, "region": "skikda", "text": "كفاق عد يخلوز والمصروع من شاهش مئبل مئبل"}
