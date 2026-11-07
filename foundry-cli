@@ -1,131 +1,107 @@
 #!/usr/bin/env python3
-import argparse
-import glob
-import json
-import os
-import subprocess
-import sys
-import wave
+# -*- coding: utf-8 -*-
+import argparse, glob, json, os, re, subprocess, sys, wave
 
 WHISPER_BIN = "whisper.cpp/main" if os.path.exists("whisper.cpp/main") else "whisper.cpp/build/bin/whisper-cli"
 MODEL_PATH = "whisper.cpp/models/ggml-base.bin"
 
+def normalize_darja(text: str) -> str:
+    if not text: return ""
+    text = re.sub(r"[ً-ٰٟـ]", "", text)
+    text = re.sub(r"[إأآٱ]", "ا", text)
+    text = re.sub(r"ى", "ي", text)
+    text = re.sub(r"ة", "ه", text)
+    text = re.sub(r"(.)\1{2,}", r"\1", text)
+    text = re.sub(r"[^؀-ۿ\s]", " ", text)
+    return re.sub(r"\s+", " ", text).strip()
+
 def run_ingest(args):
-    target_dir = os.path.join("data", args.region, "wavs")
-    os.makedirs(target_dir, exist_ok=True)
-    raw_files = glob.glob(os.path.join(args.input, "*.*"))
-    print(f"[*] العثور على {len(raw_files)} ملف في {args.input}")
-    
-    count = 0
-    for f in raw_files:
-        ext = os.path.splitext(f)[1].lower()
-        if ext in [".wav", ".mp3", ".m4a", ".ogg"]:
-            out_file = os.path.join(target_dir, f"{os.path.splitext(os.path.basename(f))[0]}_16k.wav")
-            cmd = ["ffmpeg", "-y", "-i", f, "-ar", "16000", "-ac", "1", "-c:a", "pcm_s16le", out_file]
-            subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-            count += 1
-    print(f"[+] تم تحويل وتصدير {count} ملف إلى {target_dir}")
+    target = os.path.join("data", args.region, "wavs")
+    os.makedirs(target, exist_ok=True)
+    files = glob.glob(os.path.join(args.input, "*.*"))
+    print(f"[*] Input files: {len(files)}")
+    c = 0
+    for f in files:
+        if os.path.splitext(f)[1].lower() in [".wav", ".mp3", ".m4a", ".ogg"]:
+            base = os.path.splitext(os.path.basename(f))[0]
+            out = os.path.join(target, f"{base}_16k.wav")
+            subprocess.run(["ffmpeg", "-y", "-i", f, "-ar", "16000", "-ac", "1", "-c:a", "pcm_s16le", out], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            c += 1
+    print(f"[+] Converted {c} files to {target}")
 
 def run_segment(args):
-    region_dir = os.path.join("data", args.region, "wavs")
-    wav_files = glob.glob(os.path.join(region_dir, "*.wav"))
-    print(f"[*] معالجة المقاطع لولاية: {args.region} ({len(wav_files)} ملف)")
-    # تجهيز أو فهرسة المقاطع
-    manifest_p = os.path.join("data", args.region, "manifest.jsonl")
-    entries = []
-    for wf in sorted(wav_files):
+    rdir = os.path.join("data", args.region, "wavs")
+    wavs = sorted(glob.glob(os.path.join(rdir, "*.wav")))
+    mp = os.path.join("data", args.region, "manifest.jsonl")
+    items = []
+    for w in wavs:
+        dur = 0.0
         try:
-            with wave.open(wf, 'r') as r:
-                frames = r.getnframes()
-                rate = r.getframerate()
-                dur = round(frames / float(rate), 2)
-        except Exception:
-            dur = 0.0
-        
-        entries.append({
-            "audio_file": os.path.relpath(wf, os.path.join("data", args.region)),
+            with wave.open(w, "r") as r:
+                dur = round(r.getnframes() / float(r.getframerate()), 2)
+        except Exception: pass
+        items.append({
+            "audio_file": os.path.relpath(w, os.path.join("data", args.region)),
             "duration": dur,
             "transcript": "",
             "province": args.region,
             "region": args.region
         })
-    with open(manifest_p, 'w', encoding='utf-8') as f:
-        for item in entries:
-            f.write(json.dumps(item, ensure_ascii=False) + "\n")
-    print(f"[+] تم إنشاء/تحديث الـ Manifest في: {manifest_p}")
+    with open(mp, "w", encoding="utf-8") as f:
+        for it in items:
+            f.write(json.dumps(it, ensure_ascii=False) + chr(10))
+    print(f"[+] Manifest saved: {mp} ({len(items)} items)")
 
 def run_transcribe(args):
-    manifest_p = os.path.join("data", args.region, "manifest.jsonl")
-    if not os.path.exists(manifest_p):
-        print(f"[-] المانيفست غير موجود: {manifest_p}")
-        return
-    
+    mp = os.path.join("data", args.region, "manifest.jsonl")
+    if not os.path.exists(mp):
+        print(f"[-] Manifest not found: {mp}"); return
     model = args.model if args.model else MODEL_PATH
-    with open(manifest_p, 'r', encoding='utf-8') as f:
-        records = [json.loads(line) for line in f if line.strip()]
-
-    print(f"[*] بدء التفريغ الصوتي لـ {len(records)} عينة باستخدام {model}")
-    for idx, item in enumerate(records):
-        full_audio = os.path.join("data", args.region, item.get("audio_file", ""))
-        if not item.get("transcript") and os.path.exists(full_audio):
-            cmd = [WHISPER_BIN, "-m", model, "-f", full_audio, "-l", "ar", "-t", "4", "-nt"]
+    with open(mp, "r", encoding="utf-8") as f:
+        records = [json.loads(l) for l in f if l.strip()]
+    upd = 0
+    for idx, it in enumerate(records):
+        audio = os.path.join("data", args.region, it.get("audio_file", ""))
+        if not it.get("transcript") and os.path.exists(audio):
+            cmd = [WHISPER_BIN, "-m", model, "-f", audio, "-l", "ar", "-t", "4", "-nt"]
             try:
                 res = subprocess.run(cmd, capture_output=True, text=True, check=True)
-                clean_txt = " ".join(res.stdout.strip().split())
-                item["transcript"] = clean_txt
-                print(f"[{idx+1}/{len(records)}] {os.path.basename(full_audio)} -> {clean_txt}")
+                clean = normalize_darja(res.stdout.strip())
+                it["transcript"] = clean
+                upd += 1
+                print(f"[{idx+1}/{len(records)}] {os.path.basename(audio)} -> {clean}")
             except Exception as e:
-                print(f"[-] خطأ في {full_audio}: {e}")
-
-    with open(manifest_p, 'w', encoding='utf-8') as f:
-        for item in records:
-            f.write(json.dumps(item, ensure_ascii=False) + "\n")
-    print("[+] اكتمل التفريغ وتحديث ملف الـ Manifest.")
+                print(f"[-] Error: {e}")
+    with open(mp, "w", encoding="utf-8") as f:
+        for it in records:
+            f.write(json.dumps(it, ensure_ascii=False) + chr(10))
+    print(f"[+] Transcribed & normalized {upd} items.")
 
 def run_export(args):
     from huggingface_hub import HfApi
     api = HfApi()
-    region_dir = os.path.join("data", args.region)
-    print(f"[*] رفع بيانات {args.region} إلى المستودع: {args.hf_repo}")
     api.upload_folder(
-        folder_path=region_dir,
+        folder_path=os.path.join("data", args.region),
         path_in_repo=f"data/{args.region}",
         repo_id=args.hf_repo,
         repo_type="dataset",
-        commit_message=f"feat({args.region}): automated upload via foundry-cli"
+        commit_message=f"feat({args.region}): auto upload with normalized darja"
     )
-    print("[+] اكتمل الرفع بنجاح!")
+    print("[+] Exported successfully.")
 
 def main():
-    parser = argparse.ArgumentParser(description="dialects-ai-foundry CLI")
-    subparsers = parser.add_subparsers(dest="command")
-
-    p_ingest = subparsers.add_parser("ingest")
-    p_ingest.add_argument("--input", required=True)
-    p_ingest.add_argument("--region", required=True)
-
-    p_segment = subparsers.add_parser("segment")
-    p_segment.add_argument("--region", required=True)
-
-    p_transcribe = subparsers.add_parser("transcribe")
-    p_transcribe.add_argument("--region", required=True)
-    p_transcribe.add_argument("--model", default=MODEL_PATH)
-
-    p_export = subparsers.add_parser("export")
-    p_export.add_argument("--region", required=True)
-    p_export.add_argument("--hf-repo", required=True)
-
-    args = parser.parse_args()
-    if args.command == "ingest":
-        run_ingest(args)
-    elif args.command == "segment":
-        run_segment(args)
-    elif args.command == "transcribe":
-        run_transcribe(args)
-    elif args.command == "export":
-        run_export(args)
-    else:
-        parser.print_help()
+    p = argparse.ArgumentParser(description="dialects-ai-foundry CLI")
+    sub = p.add_subparsers(dest="cmd")
+    p1 = sub.add_parser("ingest"); p1.add_argument("--input", required=True); p1.add_argument("--region", required=True)
+    p2 = sub.add_parser("segment"); p2.add_argument("--region", required=True)
+    p3 = sub.add_parser("transcribe"); p3.add_argument("--region", required=True); p3.add_argument("--model", default=MODEL_PATH)
+    p4 = sub.add_parser("export"); p4.add_argument("--region", required=True); p4.add_argument("--hf-repo", required=True)
+    args = p.parse_args()
+    if args.cmd == "ingest": run_ingest(args)
+    elif args.cmd == "segment": run_segment(args)
+    elif args.cmd == "transcribe": run_transcribe(args)
+    elif args.cmd == "export": run_export(args)
+    else: p.print_help()
 
 if __name__ == "__main__":
     main()
