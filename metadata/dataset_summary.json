@@ -1,0 +1,10 @@
+{
+  "total_samples": 45,
+  "total_duration_hours": 0.09,
+  "breakdown": {
+    "skikda": {
+      "samples": 45,
+      "duration_minutes": 5.55
+    }
+  }
+}
