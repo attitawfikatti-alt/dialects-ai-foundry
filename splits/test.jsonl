@@ -1,4 +1,5 @@
 {"audio": "data/skikda/wavs/sample_16k_seg_000.wav", "duration": 3.0, "sentence": "(الأسفة)", "province": "skikda", "region": "skikda"}
+{"audio": "data/skikda/wavs/voice_test_16k_seg_018.wav", "duration": 3.94, "sentence": "كفاق عد يخلوز والمصروع من شاهش مئبل مئبل", "province": "skikda", "region": "skikda"}
 {"audio": "data/audio/sample_003.wav", "duration": 0.0, "sentence": "صباحك و رباحك و مائة ناقة في مراحك", "province": "data", "region": "بوقطب"}
-{"audio": "data/skikda/wavs/voice_test_16k_006.wav", "duration": 8.0, "sentence": "ونحقنا نهادرو الحمد لله نهادرو بحاجة شحال نهادرو ونحن نهادرو", "province": "سكيكدة", "region": "الشرق الجزائري"}
+{"audio": "data/skikda/wavs/voice_test_16k_006.wav", "duration": 8.0, "sentence": "ونحقنا نهادرو الحمد لله نهادرو بحاجه شحال نهادرو ونحن نهادرو", "province": "سكيكدة", "region": "الشرق الجزائري"}
 {"audio": "data/skikda/wavs/voice_test_16k_seg_010.wav", "duration": 8.0, "sentence": "وحن نصف يتوقع نوودي يسطر باني ميذات سنة بغانسكك جيالسم خليل القاني لبسوص راو منه", "province": "skikda", "region": "skikda"}
