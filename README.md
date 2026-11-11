@@ -2,7 +2,7 @@
 language:
 - ar
 - arq
-license: cc-by-4.0
+license: cc-by-nc-4.0
 task_categories:
 - automatic-speech-recognition
 pretty_name: Algerian Multi-Dialect Speech Corpus (dialects-ai-foundry)
