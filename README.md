@@ -1,43 +1,22 @@
-# Dialects AI Foundry (Algerian Arabic ASR)
+# Dialects AI Foundry
 
-Open-source Algerian Arabic multi-dialect speech recognition pipeline built on **whisper.cpp** and optimized for offline inference on Android (Termux).
+Algerian Arabic ASR on Android (Termux) using whisper.cpp.
 
-## Pre-trained GGML Model
+## Model
+- Termuxphone/skikda-whisper-dz-ggml (q5_1, ~190MB)
 
-The quantized `q5_1` model (~190 MB) is hosted on Hugging Face:
-- [**Termuxphone/skikda-whisper-dz-ggml**](https://huggingface.co/Termuxphone/skikkda-whisper-dz-ggml)
-
-## Quick Installation (Termux)
-
+## Setup
 ```bash
-# 1. Clone the repository
-git clone https://github.com/attitawfikatti-alt/dialects-ai-foundry.git
-cd dialects-ai-foundry
-
-# 2. Download the quantized model
-mkdir -p whisper.cpp/models
-repo="https://huggingface.co/Termuxphone/skikkda-whisper-dz-ggml/resolve/main"
-curl -L "$repo/ggml-whisper-dz-q5_1.bin" -o whisper.cpp/models/ggml-whisper-dz-q5_1.bin
-
-# 3. Install the CLI wrappers
-chmod +x dz-transcribe.sh dz-batch.sh dz-split.sh dz-push-dataset.sh
-for script in dz-transcribe dz-batch dz-split dz-push-dataset; do
-  ln -sf "$PWD/${script}.sh" "$PREFIX/bin/${script}"
-done
+chmod +x dz-*.sh dz-review.py
+for f in dz-*.sh; do ln -sf "$PWD/$f" "$PREFIX/bin/${f%.sh}"; done
+ln -sf "$PWD/dz-review.py" "$PREFIX/bin/dz-review"
 ```
 
-## CLI Workflow
-
+## Workflow
 ```bash
-# 1. Transcribe a single audio/video file
-dz-transcribe audio.m4a
-
-# 2. Batch-transcribe a folder into transcripts.jsonl
-dz-batch audio_folder
-
-# 3. Auto-split long audio by silence and batch-transcribe
-dz-split long_recording.m4a
-
-# 4. Push chunks + metadata.jsonl to Hugging Face Datasets
-dz-push-dataset long_recording_chunks dz-dialect-dataset
+dz-transcribe file.m4a
+dz-batch folder/
+dz-split long.m4a
+dz-review long_chunks/
+dz-push-dataset long_chunks/ dataset-name
 ```
