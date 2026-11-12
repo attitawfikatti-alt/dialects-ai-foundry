@@ -10,3 +10,4 @@ sample.wav
 __pycache__/
 *.pyc
 .env.local
+*.bin
