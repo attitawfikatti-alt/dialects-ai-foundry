@@ -26,7 +26,7 @@ else
 fi
 
 "$CLI" -m "$MODEL" -l ar -t 4 -bs 3 -bo 3 \
-    --prompt "كلام باللهجة الجزائرية:" \
+    -mc 0 \
     -otxt -of "$OUT_BASE" -f "$AUDIO_FILE"
 
 if [ "$CLEANUP" -eq 1 ]; then
