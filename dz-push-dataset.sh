@@ -1,7 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 set -e
 
-if [ -n "$1" ] || [ -n "$2" ]; then
+if [ -z "$1" ] || [ -z "$2" ]; then
     echo "Usage: dz-push-dataset <chunks_dir> <hf_dataset_name>"
     exit 1
 fi

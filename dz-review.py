@@ -8,7 +8,7 @@ if not os.path.exists(path):
 
 base_dir = os.path.dirname(os.path.abspath(path))
 prog_path = path + ".progress"
-player = next((shutil.which(p) for p in ("termux-media-player", "mpv", "play") if shutil.which(p)), None)
+player = next((shutil.which(p) for p in ("mpv", "termux-media-player", "play") if shutil.which(p)), None)
 
 with open(path, "r", encoding="utf-8") as f:
     items = [json.loads(line) for line in f if line.strip()]
