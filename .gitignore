@@ -23,3 +23,6 @@ whisper.cpp/
 __pycache__/
 *.bak
 *.log
+
+# Secrets & Env
+.env*
