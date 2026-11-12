@@ -19,20 +19,25 @@ mkdir -p whisper.cpp/models
 repo="https://huggingface.co/Termuxphone/skikkda-whisper-dz-ggml/resolve/main"
 curl -L "$repo/ggml-whisper-dz-q5_1.bin" -o whisper.cpp/models/ggml-whisper-dz-q5_1.bin
 
-# 3. Install the transcription wrappers
-chmod +x dz-transcribe.sh dz-batch.sh
-ln -sf "$PWD/dz-transcribe.sh" "$PREFIX/bin/dz-transcribe"
-ln -sf "$PWD/dz-batch.sh" "$PREFIX/bin/dz-batch"
+# 3. Install the CLI wrappers
+chmod +x dz-transcribe.sh dz-batch.sh dz-split.sh dz-push-dataset.sh
+for script in dz-transcribe dz-batch dz-split dz-push-dataset; do
+  ln -sf "$PWD/${script}.sh" "$PREFIX/bin/${script}"
+done
 ```
 
-## Usage
+## CLI Workflow
 
-Ranscribe a single audio or video file:
 ```bash
-dz-transcribe path/to/audio.m4a
-```
+# 1. Transcribe a single audio/video file
+dz-transcribe audio.m4a
 
-Batch-transcribe an entire folder and generate `¶¶§±Êâ¦Û#²‰å`:
-```bash
-dz-batch path/to/audio_folder
+# 2. Batch-transcribe a folder into transcripts.jsonl
+dz-batch audio_folder
+
+# 3. Auto-split long audio by silence and batch-transcribe
+dzi-split long_recording.m4a
+
+# 4. Push chunks + metadata.jsonl to Hugging Face Datasets
+dz-push-dataset long_recording_chunks dz-dialect-dataset
 ```
