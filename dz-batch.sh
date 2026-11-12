@@ -13,7 +13,7 @@ if [ ! -d "$DIR" ]; then
 fi
 
 OUT_JSONL="$DIR/transcripts.jsonl"
-> "$OUT_JSONL"
+touch "$OUT_JSONL"
 
 shopt -s nullglob nocaseglob
 FILES=("$DIR"/*.{wav,mp3,ogg,m4a,opus,mp4,aac,flac})
@@ -23,17 +23,21 @@ if [ ${#FILES[@]} -eq 0 ]; then
     exit 1
 fi
 
-echo "جاري تفريغ ${#FILES[@]} ملف..."
+echo "جاري فحص وتفريغ ${#FILES[@]} ملف (مع تخطي المنجز مسبقاً)..."
 for FILE in "${FILES[@]}"; do
+    BASENAME=$(basename "$FILE")
+    if grep -q "\"$BASENAME\"" "$OUT_JSONL"; then
+        continue
+    fi
     echo "----------------------------------------"
-    echo "معالجة: $(basename "$FILE")"
+    echo "معالجة: $BASENAME"
     dz-transcribe "$FILE"
     TXT_FILE="${FILE%.*}.txt"
     if [ -f "$TXT_FILE" ]; then
         TEXT=$(tr '\n' ' ' < "$TXT_FILE" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
-        python3 -c 'import json, sys; print(json.dumps({"file_name": sys.argv[1], "text": sys.argv[2]}, ensure_ascii=False))' "$(basename "$FILE")" "$TEXT" >> "$OUT_JSONL"
+        python3 -c 'import json, sys; print(json.dumps({"file_name": sys.argv[1], "text": sys.argv[2]}, ensure_ascii=False))' "$BASENAME" "$TEXT" >> "$OUT_JSONL"
     fi
 done
 
 echo "========================================"
-echo "اكتمل التفريغ الجماعي! تم حفظ البيانات المجمعة في: $OUT_JSONL"
+echo "اكتمل التفريغ الجماعي! الإجمالي في $OUT_JSONL: $(wc -l < "$OUT_JSONL") سطر."
