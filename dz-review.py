@@ -10,12 +10,12 @@ base_dir = os.path.dirname(os.path.abspath(path))
 prog_path = path + ".progress"
 player = next((shutil.which(p) for p in ("mpv", "termux-media-player", "play") if shutil.which(p)), None)
 
-with open(path, "r", encoding="utf-8") as f:
+with open(path, "r", encoding="utf-8", errors="replace") as f:
     items = [json.loads(line) for line in f if line.strip()]
 
 done = {}
 if os.path.exists(prog_path):
-    with open(prog_path, "r", encoding="utf-8") as f:
+    with open(prog_path, "r", encoding="utf-8", errors="replace") as f:
         for line in f:
             if line.strip():
                 r = json.loads(line)
@@ -39,11 +39,11 @@ for idx, item in enumerate(items, 1):
         if cmd == "q":
             sys.exit("Progress saved.")
         rec = {"file_name": fname, "text": None if cmd == "d" else (text if cmd == "" else cmd)}
-        with open(prog_path, "a", encoding="utf-8") as f:
+        with open(prog_path, "a", encoding="utf-8", errors="replace") as f:
             f.write(json.dumps(rec, ensure_ascii=False) + "\n")
         break
 
-with open(prog_path, "r", encoding="utf-8") as f:
+with open(prog_path, "r", encoding="utf-8", errors="replace") as f:
     kept = [json.loads(l) for l in f if l.strip() and json.loads(l)["text"] is not None]
 
 for fname in {i["file_name"] for i in items} - {r["file_name"] for r in kept}:
@@ -51,7 +51,7 @@ for fname in {i["file_name"] for i in items} - {r["file_name"] for r in kept}:
     if os.path.exists(p):
         os.remove(p)
 
-with open(path, "w", encoding="utf-8") as f:
+with open(path, "w", encoding="utf-8", errors="replace") as f:
     for r in kept:
         f.write(json.dumps(r, ensure_ascii=False) + "\n")
 os.remove(prog_path)
