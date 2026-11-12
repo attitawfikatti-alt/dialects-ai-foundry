@@ -1,0 +1,32 @@
+{"audio": "data/skikda/wavs/sample_16k_seg_000.wav", "duration": 3.0, "sentence": "الاسفه", "province": "skikda", "region": "skikda"}
+{"audio": "data/skikda/wavs/voice_test_16k_seg_018.wav", "duration": 3.94, "sentence": "كفاق عد يخلوز والمصروع من شاهش مئبل مئبل", "province": "skikda", "region": "skikda"}
+{"audio": "data/audio/sample_003.wav", "duration": 0.0, "sentence": "صباحك و رباحك و مائه ناقه في مراحك", "province": "data", "region": "بوقطب"}
+{"audio": "data/skikda/wavs/voice_test_16k_006.wav", "duration": 8.0, "sentence": "ونحقنا نهادرو الحمد لله نهادرو بحاجه شحال نهادرو ونحن نهادرو", "province": "سكيكدة", "region": "الشرق الجزائري"}
+{"audio": "data/skikda/wavs/voice_test_16k_seg_010.wav", "duration": 8.0, "sentence": "وحن نصف يتوقع نوودي يسطر باني ميذات سنه بغانسكك جيالسم خليل القاني لبسوص راو منه", "province": "skikda", "region": "skikda"}
+{"audio_file": "data/tebessa/wavs/tebessa_seg_007_16k.wav", "duration": 3.74, "transcript": "اسحتنا الروح الشفدينا اسحتنا", "province": "tebessa", "region": "tebessa"}
+{"audio_file": "data/skikda/wavs/voice_test_16k_009.wav", "duration": 8.0, "transcript": "ويسرح يهدير الحديرات علي البلديه مكاملتريه ويسرح يهدير اي لحياه يجري من تونيهدي", "province": "سكيكدة", "region": "الشرق الجزائري"}
+{"id": "sample_0158", "audio_file": "data/annaba/sample_0158.wav", "transcript": "لكن قبل ذالك", "region": "annaba", "speaker_gender": "M", "speaker_age": 45}
+{"id": "sample_0170", "audio_file": "data/bechar/sample_0170.wav", "transcript": "واه انشاء الله قاع تعيد انشاء الله بأذن الله", "region": "bechar", "speaker_gender": "M", "speaker_age": 48}
+{"id": "sample_0130", "audio_file": "data/belabbes/sample_0130.wav", "transcript": "تكسلت كيما هاكا وقلت", "region": "belabbes", "speaker_gender": "F", "speaker_age": 20}
+{"id": "sample_0104", "audio_file": "data/belabbes/sample_0104.wav", "transcript": "معا جوايه الوحدة ونص الزوج زيفطولي الفطور", "region": "belabbes", "speaker_gender": "F", "speaker_age": 20}
+{"id": "sample_0120", "audio_file": "data/belabbes/sample_0120.wav", "transcript": "قعدت نقولها ارواحي بنتي غرواحي ما ت8افيش", "region": "belabbes", "speaker_gender": "F", "speaker_age": 20}
+{"id": "sample_0035", "audio_file": "data/belabbes/sample_0035.wav", "transcript": "طلعت راسي هاكا مكانش البنت ااايوا قلت هاو مالي", "region": "belabbes", "speaker_gender": "F", "speaker_age": 20}
+{"id": "sample_0022", "audio_file": "data/belabbes/sample_0022.wav", "transcript": "مالقيت تا واحد", "region": "belabbes", "speaker_gender": "F", "speaker_age": 20}
+{"id": "sample_0069", "audio_file": "data/belabbes/sample_0069.wav", "transcript": "بالي خيالها في التاقة", "region": "belabbes", "speaker_gender": "F", "speaker_age": 20}
+{"id": "sample_0025", "audio_file": "data/belabbes/sample_0025.wav", "transcript": "تمشيت غي واحد تقول واح زوج خطوات تلاثة", "region": "belabbes", "speaker_gender": "F", "speaker_age": 20}
+{"id": "sample_0092", "audio_file": "data/belabbes/sample_0092.wav", "transcript": "وانايا يا ربي يا ربي بعد عليا لبلا يا ربي وشتا هادا", "region": "belabbes", "speaker_gender": "F", "speaker_age": 20}
+{"id": "sample_0134", "audio_file": "data/belabbes/sample_0134.wav", "transcript": "مين نحلو قاع البيبان", "region": "belabbes", "speaker_gender": "F", "speaker_age": 20}
+{"id": "sample_0040", "audio_file": "data/belabbes/sample_0040.wav", "transcript": "شغت فيها هنا كي قاتلي علي ارواح عرفتها بلي مشي هورمال شفت فيها", "region": "belabbes", "speaker_gender": "F", "speaker_age": 20}
+{"id": "sample_0096", "audio_file": "data/belabbes/sample_0096.wav", "transcript": "قعدت هي تجبد وانا نجبد زيرت روحي وجبدت الكوفيرطة كي حليت عينيا كيما هاكا ما ناقا والو صاي مكان حتا واحد", "region": "belabbes", "speaker_gender": "F", "speaker_age": 20}
+{"id": "sample_0056", "audio_file": "data/belabbes/sample_0056.wav", "transcript": "قعدت نقول شكون", "region": "belabbes", "speaker_gender": "F", "speaker_age": 20}
+{"id": "sample_0043", "audio_file": "data/belabbes/sample_0043.wav", "transcript": "نخلعت كيما هاك قعدت نشوف فيها", "region": "belabbes", "speaker_gender": "F", "speaker_age": 20}
+{"id": "sample_0034", "audio_file": "data/belabbes/sample_0034.wav", "transcript": "ونردخ علي فرض تقول واحد جا وردخني", "region": "belabbes", "speaker_gender": "F", "speaker_age": 20}
+{"id": "sample_0217", "audio_file": "data/djelfa/sample_0217.wav", "transcript": "يا حنا كي جي قي ترميم واحد برك", "region": "djelfa", "speaker_gender": "M", "speaker_age": 30}
+{"id": "sample_0228", "audio_file": "data/djelfa/sample_0228.wav", "transcript": "دغرونا كي لوعالة علبال كلخ كلخ كلخ كلخ", "region": "djelfa", "speaker_gender": "M", "speaker_age": 30}
+{"id": "sample_0187", "audio_file": "data/tizi_ouzou/sample_0187.wav", "transcript": "ابنائي الشباب", "region": "tizi_ouzou", "speaker_gender": "M", "speaker_age": 50}
+{"id": "sample_0200", "audio_file": "data/batna/sample_0200.wav", "transcript": "وقالم راني مستعد في اطار المصلحة العامة", "region": "batna", "speaker_gender": "M", "speaker_age": 46}
+{"audio": "data/proverbs_nov09/wavs/chunk_0062.wav", "duration": 6.52, "sentence": "لا تتزوج غي لمرا لعفيفه تتعاون هي و زمان عليك", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0057.wav", "duration": 5.85, "sentence": "رفرف ما لقا جنحين و يبكي ما سالو دموعه", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0051.wav", "duration": 6.08, "sentence": "لا تتكلم حتي تخمم لا تعودلك فضيحه", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0039.wav", "duration": 5.41, "sentence": "و يعجبك زين الطفله حتي تشوف لفعايل", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0030.wav", "duration": 5.64, "sentence": "الدنيا قش في قش ولي تنفخ يتفش", "province": "el_bayadh", "region": "proverbs_nov09"}

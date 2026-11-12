@@ -216,3 +216,56 @@
 {"id": "sample_0206", "audio_file": "data/batna/wavs/sample_0206.wav", "transcript": "ماتعطلهمش باش ما يتعطلش المواطن", "region": "batna", "speaker_gender": "M", "speaker_age": 46, "audio": "dialects-ai-foundry/data/batna/wavs/sample_0206.wav", "sentence": "ماتعطلهمش باش ما يتعطلش المواطن", "province": "batna", "duration": 2.98}
 {"id": "sample_0194", "audio_file": "data/batna/wavs/sample_0194.wav", "transcript": "بيرو دتيد وسيب ديفيزيونال شاف دو بروجي نتايا", "region": "batna", "speaker_gender": "M", "speaker_age": 46, "audio": "dialects-ai-foundry/data/batna/wavs/sample_0194.wav", "sentence": "بيرو دتيد وسيب ديفيزيونال شاف دو بروجي نتايا", "province": "batna", "duration": 3.66}
 {"id": "sample_0201", "audio_file": "data/batna/wavs/sample_0201.wav", "transcript": "تاني المواطن بعد بيه حنا", "region": "batna", "speaker_gender": "M", "speaker_age": 46, "audio": "dialects-ai-foundry/data/batna/wavs/sample_0201.wav", "sentence": "تاني المواطن بعد بيه حنا", "province": "batna", "duration": 1.72}
+{"audio": "data/proverbs_nov09/wavs/chunk_0061.wav", "duration": 6.64, "sentence": "نوصيك يا حارس الحلفة بلاك من دخانها يعميك", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0031.wav", "duration": 6.13, "sentence": "لا تخمم لا دبر لا ترفد الهم ديما", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0018.wav", "duration": 8.89, "sentence": "كي ن حي مشتاقي تمرة و كي مات علقوله عرجون", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0023.wav", "duration": 6.32, "sentence": "لحمار حماري ونركب من لور", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0009.wav", "duration": 5.39, "sentence": "ش راك متفكرنا ولا قطعت رجا", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0016.wav", "duration": 5.69, "sentence": "الد بالوجوه و آخرة بالفعايل", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0011.wav", "duration": 5.69, "sentence": "واش خبارك وكيفاش صبحتو اليوم", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0020.wav", "duration": 7.01, "sentence": "جاك الضيم ارجع لصاحبك لقديم", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0048.wav", "duration": 5.94, "sentence": "نوصيك يا واكل الراس في البير ارمي عظامه", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0046.wav", "duration": 5.2, "sentence": "في شتا يقول البرد وفي الصيف يقول يا راسي", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0003.wav", "duration": 5.55, "sentence": "يحرث علي ضحا غير ثور لعشاوي", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0029.wav", "duration": 5.94, "sentence": "ذا تفاهمت لعزوج والكنة يدخل بليس للجنة", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0053.wav", "duration": 6.18, "sentence": "لي بغاك بغيه كثر ولي باعك لا تشريه", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0004.wav", "duration": 4.57, "sentence": "لي حشم وجهه ضره", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0055.wav", "duration": 5.57, "sentence": "يا قلبي خلفتلي العار وتريد من لا يريدك", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0010.wav", "duration": 6.66, "sentence": "ال يعطيك الصحة والعافية", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0052.wav", "duration": 5.87, "sentence": "الصاحب لا تلاعبه والنار لا تفوت عليها", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0022.wav", "duration": 7.5, "sentence": "عدو ما يولي حبيب و نخلة ما تولي سميد", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0044.wav", "duration": 5.6, "sentence": "نزلت من كان سلطان وركبت من كان راعي", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0025.wav", "duration": 4.97, "sentence": "علا قد فراشك مد رجليك", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0024.wav", "duration": 5.94, "sentence": "خاصك غي سواك يا معوجت لحناك", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0000.wav", "duration": 6.15, "sentence": "الضحك يفك الشدايد والهم ما يبني حيط", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0058.wav", "duration": 6.39, "sentence": "ولد لحمار لا تربيه لوكان تدهن جلوده", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0028.wav", "duration": 4.55, "sentence": "خوك خوك لا يغرك صاحبك", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0042.wav", "duration": 4.99, "sentence": "من فوق ما باين دخان ولتحت ما طابو حجاره", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0026.wav", "duration": 4.85, "sentence": "ح يزيد و سموه سعيد", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0050.wav", "duration": 5.64, "sentence": "لا تسرج حتى تلجم و عقد عقدة صحيحة", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0012.wav", "duration": 4.85, "sentence": "رحمك ويرحم والديك", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0035.wav", "duration": 5.92, "sentence": "نصبر لتعوس ليام حتي ياتي زماني", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0045.wav", "duration": 5.25, "sentence": "الشر ما يظلم حد غي لي جابه روحه", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0038.wav", "duration": 4.99, "sentence": "لا يغرك نوار الدفلة في الواد داير ضلايل", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0032.wav", "duration": 6.36, "sentence": "سافر تعرف الناس وكبير القوم طيعه", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0056.wav", "duration": 7.01, "sentence": "يا ويح من طاح في بير وصعاب عليه طلوعه", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0013.wav", "duration": 6.29, "sentence": "الد لله راضيين بواش عطا ربي", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0049.wav", "duration": 5.67, "sentence": "اضحك والعب مع الناس وفمك متنله لجامه", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0060.wav", "duration": 6.01, "sentence": "صعبت عليا يا مسكين وصعاب عليا حالك", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0002.wav", "duration": 4.92, "sentence": "كي طارت الطيور جات الهامة دور", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0027.wav", "duration": 5.85, "sentence": "ناكل الخبز البايت ولا سفنج شمايت", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0037.wav", "duration": 5.13, "sentence": "وخلي لخلايق يشكو الي يوم القيامة", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0005.wav", "duration": 5.29, "sentence": "يحس بالجمرة غيلي كواته", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0034.wav", "duration": 6.22, "sentence": "نرقد علي الشوك عريان و نضحك للي جافاني", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0054.wav", "duration": 5.67, "sentence": "يا قلبي نكويك بانار ولا شفيت نزيدك", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0043.wav", "duration": 6.8, "sentence": "يا ذي زمان يا لغدار يا كاسرني من ذراعي", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0006.wav", "duration": 5.18, "sentence": "لدارها بيديه يفكها بسنيه", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0059.wav", "duration": 7.31, "sentence": "الصك و العض فيه هاذي هي عادت جدوده", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0008.wav", "duration": 6.83, "sentence": "قل و دايم خير من قليل و مقطوع", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0014.wav", "duration": 5.39, "sentence": "اللسان يبني ديار و يهدم ديار", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0015.wav", "duration": 6.11, "sentence": "س القايلة ولا ظل شجرتكم", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0017.wav", "duration": 6.18, "sentence": "ال المزموم ما تدخلو ذبانة", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0047.wav", "duration": 5.8, "sentence": "الا شفت لا تخبر واذا سولوك قول يا لالا", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0001.wav", "duration": 6.92, "sentence": "طول الخط ما يدير كبة وطول الحديث ما يدير هبة", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0007.wav", "duration": 6.08, "sentence": "الجمل ما يشوف حدبته يشوف حدبت خوه", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0040.wav", "duration": 7.22, "sentence": "راح ذاك الزمان و ناسه و جا هاذ الزمان بفاسه", "province": "el_bayadh", "region": "proverbs_nov09"}

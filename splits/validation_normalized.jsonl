@@ -1,0 +1,32 @@
+{"audio": "data/skikda/wavs/voice_test_16k_seg_013.wav", "duration": 8.0, "sentence": "نعم، نعم، نعم، نعم، نعم، نعم", "province": "skikda", "region": "skikda"}
+{"audio": "data/skikda/wavs/voice_test_16k_003.wav", "duration": 8.0, "sentence": "يخلصوا و يخدم مصر و يفدوا يجيب لي زيكيب مووراه المصر و لم يتعد نسبه الاسغار", "province": "سكيكدة", "region": "الشرق الجزائري"}
+{"audio": "data/skikda/wavs/voice_test_16k_008.wav", "duration": 8.0, "sentence": "ونحصل بالمير ونحصل بالمير المير زياده دركي عايت الوصول بيس بريزي", "province": "سكيكدة", "region": "الشرق الجزائري"}
+{"audio": "data/skikda/wavs/voice_test_16k_016.wav", "duration": 8.0, "sentence": "مصفر كيف تلعب؟ نعم نخلصوص ستربري مشروع من", "province": "سكيكدة", "region": "الشرق الجزائري"}
+{"audio": "data/skikda/wavs/voice_test_16k_018.wav", "duration": 3.94, "sentence": "تفاق عاد يخلص والمسروع من شهرس مئه بالمئه", "province": "سكيكدة", "region": "الشرق الجزائري"}
+{"audio_file": "data/tebessa/wavs/tebessa_seg_005_16k.wav", "duration": 6.0, "transcript": "من كانوا يقرون في الشامع وكملون لسونس المسر تحم والله يسرق في الدياه", "province": "tebessa", "region": "tebessa"}
+{"audio_file": "data/skikda/wavs/voice_test_16k_010.wav", "duration": 8.0, "transcript": "اعطينا بامكانكم ان تشاهدوا احد من السرفات سنرغبكم في المدينه ونرغبكم في المدينه لكن اريد ان نرغبكم في المدينه اعطيكم في المدينه ونرغبكم في المدينه", "province": "سكيكدة", "region": "الشرق الجزائري"}
+{"id": "sample_0153", "audio_file": "data/annaba/sample_0153.wav", "transcript": "القطار لي تظهر يسار الشاشة", "region": "annaba", "speaker_gender": "M", "speaker_age": 45}
+{"id": "sample_0168", "audio_file": "data/bechar/sample_0168.wav", "transcript": "هذا كيما نقولو راه ثمنية تبارك الله راه كبير اسيدي تبارك الله", "region": "bechar", "speaker_gender": "M", "speaker_age": 48}
+{"id": "sample_0133", "audio_file": "data/belabbes/sample_0133.wav", "transcript": "ومن بعد نحل الباب تاعي", "region": "belabbes", "speaker_gender": "F", "speaker_age": 20}
+{"id": "sample_0088", "audio_file": "data/belabbes/sample_0088.wav", "transcript": "حسيتها بدات تتمشا", "region": "belabbes", "speaker_gender": "F", "speaker_age": 20}
+{"id": "sample_0143", "audio_file": "data/belabbes/sample_0143.wav", "transcript": "هاذوك يديها يتجقلقو هاكا في ذاك الحيط قلبي ظرني وهي تتمشا ودير ليديها هاكا", "region": "belabbes", "speaker_gender": "F", "speaker_age": 20}
+{"id": "sample_0013", "audio_file": "data/belabbes/sample_0013.wav", "transcript": "قلتلها ما تخافيش في الدوار انتي بنت من", "region": "belabbes", "speaker_gender": "F", "speaker_age": 20}
+{"id": "sample_0067", "audio_file": "data/belabbes/sample_0067.wav", "transcript": "خيالها واقف في التاقة", "region": "belabbes", "speaker_gender": "F", "speaker_age": 20}
+{"id": "sample_0020", "audio_file": "data/belabbes/sample_0020.wav", "transcript": "طلعت راسي ما لقيتش هذيك البنت", "region": "belabbes", "speaker_gender": "F", "speaker_age": 20}
+{"id": "sample_0080", "audio_file": "data/belabbes/sample_0080.wav", "transcript": "وهي غي دور في راسها", "region": "belabbes", "speaker_gender": "F", "speaker_age": 20}
+{"id": "sample_0105", "audio_file": "data/belabbes/sample_0105.wav", "transcript": "والقهوة قعدت مجمع انا و ولد خويا الصغير", "region": "belabbes", "speaker_gender": "F", "speaker_age": 20}
+{"id": "sample_0053", "audio_file": "data/belabbes/sample_0053.wav", "transcript": "نضت لبست حشاكم نعالتي باش نحل ذاك الباب حليت", "region": "belabbes", "speaker_gender": "F", "speaker_age": 20}
+{"id": "sample_0114", "audio_file": "data/belabbes/sample_0114.wav", "transcript": "قالي خليني نلعب معاها قتله راني نقولك جري للدار", "region": "belabbes", "speaker_gender": "F", "speaker_age": 20}
+{"id": "sample_0002", "audio_file": "data/belabbes/sample_0002.wav", "transcript": "روحت كيما مداري", "region": "belabbes", "speaker_gender": "F", "speaker_age": 20}
+{"id": "sample_0137", "audio_file": "data/belabbes/sample_0137.wav", "transcript": "وقعدت دير راسها دوره منا ودوره منا", "region": "belabbes", "speaker_gender": "F", "speaker_age": 20}
+{"id": "sample_0106", "audio_file": "data/belabbes/sample_0106.wav", "transcript": "قالي باغي نلعب قتله لعب غي منا ومن بعد روح للدار", "region": "belabbes", "speaker_gender": "F", "speaker_age": 20}
+{"id": "sample_0132", "audio_file": "data/belabbes/sample_0132.wav", "transcript": "سمعت سمعت المشيا", "region": "belabbes", "speaker_gender": "F", "speaker_age": 20}
+{"id": "sample_0225", "audio_file": "data/djelfa/sample_0225.wav", "transcript": "لازم كل واحد شخصيتو اعطيني الدليل اعطيني برهان", "region": "djelfa", "speaker_gender": "M", "speaker_age": 30}
+{"id": "sample_0223", "audio_file": "data/djelfa/sample_0223.wav", "transcript": "وكاينة ناس راه ماعدهاش الشخصية", "region": "djelfa", "speaker_gender": "M", "speaker_age": 30}
+{"id": "sample_0184", "audio_file": "data/tizi_ouzou/sample_0184.wav", "transcript": "انا خلاص الشهادة لي نقولو هذي الشهادة ل الله ولوجه الله راني مع اليوم انا يعني خلاص", "region": "tizi_ouzou", "speaker_gender": "M", "speaker_age": 50}
+{"id": "sample_0197", "audio_file": "data/batna/sample_0197.wav", "transcript": "مشي درناها باش نزيدو نطولو سمحلي مكان حتي مشاكل", "region": "batna", "speaker_gender": "M", "speaker_age": 46}
+{"audio": "data/proverbs_nov09/wavs/chunk_0036.wav", "duration": 6.59, "sentence": "اردم سرك و دكو في لرض سبعين قامه", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0021.wav", "duration": 5.9, "sentence": "قراه الذيب حافظه سلوقي", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0041.wav", "duration": 5.29, "sentence": "مثلت روحي مثل لحمام مكوي بصهد ناره", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0033.wav", "duration": 5.71, "sentence": "كبير الكرش والراس ب نص فلس بيعه", "province": "el_bayadh", "region": "proverbs_nov09"}
+{"audio": "data/proverbs_nov09/wavs/chunk_0019.wav", "duration": 7.36, "sentence": "ما داتوش العمشه تديه مو شعور", "province": "el_bayadh", "region": "proverbs_nov09"}
