@@ -57,7 +57,7 @@ def prepare_dataset(batch):
     batch["input_features"] = feature_extractor(
         audio["array"], sampling_rate=audio["sampling_rate"]
     ).input_features[0]
-    text_key = "transcript" if "transcript" in batch else "text"
+    text_key = next(k for k in ("sentence", "transcript", "text") if k in batch)
     batch["labels"] = tokenizer(batch[text_key]).input_ids
     return batch
 
