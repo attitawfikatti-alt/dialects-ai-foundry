@@ -36,7 +36,7 @@ dz-transcribe audio.m4a
 dz-batch audio_folder
 
 # 3. Auto-split long audio by silence and batch-transcribe
-dzi-split long_recording.m4a
+dz-split long_recording.m4a
 
 # 4. Push chunks + metadata.jsonl to Hugging Face Datasets
 dz-push-dataset long_recording_chunks dz-dialect-dataset
