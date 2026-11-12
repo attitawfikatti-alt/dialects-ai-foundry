@@ -1,7 +1,12 @@
 #!/usr/bin/env python3
-import json, os, sys, subprocess, shutil
+import json, os, sys, subprocess, shutil, argparse
 
-target = sys.argv[1].rstrip("/") if len(sys.argv) > 1 else "."
+parser = argparse.ArgumentParser(description="DZ Audio/Transcript Reviewer")
+parser.add_argument("target", nargs="?", default=".", help="Directory or transcripts.jsonl path")
+parser.add_argument("--start", type=int, default=1, help="1-based index to start reviewing from")
+args = parser.parse_args()
+
+target = args.target.rstrip("/")
 path = os.path.join(target, "transcripts.jsonl") if os.path.isdir(target) else target
 if not os.path.exists(path):
     sys.exit(f"Error: {path} not found")
@@ -21,8 +26,17 @@ if os.path.exists(prog_path):
                 r = json.loads(line)
                 done[r["file_name"]] = r
 
+# Auto-accept items before --start if not already in progress
+if args.start > 1 and not done:
+    for item in items[:args.start - 1]:
+        rec = {"file_name": item["file_name"], "text": item["text"]}
+        done[item["file_name"]] = rec
+        with open(prog_path, "a", encoding="utf-8", errors="replace") as f:
+            f.write(json.dumps(rec, ensure_ascii=False) + "\n")
+
 print(f"\n=== DZ Reviewer | {len(done)}/{len(items)} done ===")
 print("Enter=accept | text=edit | r=replay | d=delete | q=quit\n")
+
 for idx, item in enumerate(items, 1):
     fname = item["file_name"]
     if fname in done:
@@ -54,5 +68,6 @@ for fname in {i["file_name"] for i in items} - {r["file_name"] for r in kept}:
 with open(path, "w", encoding="utf-8", errors="replace") as f:
     for r in kept:
         f.write(json.dumps(r, ensure_ascii=False) + "\n")
+
 os.remove(prog_path)
 print(f"Done! Kept {len(kept)} items in {path}.")
