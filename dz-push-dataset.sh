@@ -17,5 +17,5 @@ fi
 cp "$DIR/transcripts.jsonl" "$DIR/metadata.jsonl"
 echo "Uploading dataset to Termuxphone/$REPOID..."
 HF_HUB_DISABLE_XET=1 hf repo create "Termuxphone/$REPOID" --type dataset 2>/dev/null || true
-HF_HUB_DISABLE_XET=1 hf upload "Termuxphone/$REPOID" "$DIR" . --repo-type dataset --exclude "*.txt" "transcripts.jsonl"
+HF_HUB_DISABLE_XET=1 hf upload "Termuxphone/$REPOID" "$DIR" . --repo-type dataset --exclude "*.txt" --exclude "transcripts.jsonl"
 echo "Done! Dataset live at: https://huggingface.co/datasets/Termuxphone/$REPOID"
