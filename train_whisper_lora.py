@@ -151,12 +151,17 @@ test_metrics = trainer.evaluate(encoded_dataset["test"])
 print(f"Final Test WER: {test_metrics['eval_wer']:.2f}%")
 trainer.push_to_hub()
 
-# 7. دمج الأوزان وحفظ النموذج الكامل جاهزاً للتحويل إلى whisper.cpp
+# 7. حفظ أفضل محول ودمج الأوزان مع النموذج الأساسي
+ADAPTER_DIR = "./final_lora_adapter"
+trainer.save_model(ADAPTER_DIR)
+
 print("Merging LoRA weights into base model for whisper.cpp export...")
 base_model = WhisperForConditionalGeneration.from_pretrained(MODEL_ID, torch_dtype=torch.float16)
 from peft import PeftModel
-peft_model = PeftModel.from_pretrained(base_model, "./whisper-algerian-checkpoints")
+peft_model = PeftModel.from_pretrained(base_model, ADAPTER_DIR)
 merged_model = peft_model.merge_and_unload()
 merged_model.save_pretrained(MERGED_DIR)
 processor.save_pretrained(MERGED_DIR)
-print(f"Merged model saved at {MERGED_DIR} — ready for convert-h5-to-ggml.py!")
+merged_model.push_to_hub("Termuxphone/whisper-small-algerian-merged")
+processor.push_to_hub("Termuxphone/whisper-small-algerian-merged")
+print(f"Merged model saved at {MERGED_DIR} and pushed to Hub!")
