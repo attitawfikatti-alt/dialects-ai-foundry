@@ -1,15 +1,25 @@
+# Audio & Media files
+*.wav
+*.aac
+*.mp3
+*.m4a
+*.ogg
+*.opus
+*.flac
+*.mp4
+
+# Batch & Temp directories
+batch_*/
+*_wav/
+*_chunks/
+sawt_combined/
 raw_audio/
 temp_segments/
+data/.temp_segments/
+data/foundry.db
+
+# Local builds & logs
+whisper.cpp/
 __pycache__/
-*.pyc
-.DS_Store
-test_sample.wav
-sample.wav
-test_sample.wav
-sample.wav
-__pycache__/
-*.pyc
-.env.local
-*.bin
-*.jsonl
-*.txt
+*.bak
+*.log
