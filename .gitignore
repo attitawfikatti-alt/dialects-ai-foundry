@@ -26,3 +26,6 @@ __pycache__/
 
 # Secrets & Env
 .env*
+dialect_onnx_int8/
+*.onnx
+*.bin
