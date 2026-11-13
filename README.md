@@ -54,3 +54,10 @@ While the open-source codebase and pre-quantized weights (`Termuxphone/dialects-
 | **Research & Heritage Impact** | **9.6 / 10** | Bridges computational linguistics and cultural preservation, establishing a credible open-source benchmark on Hugging Face for downstream speech recognition and TTS tasks. |
 
 **Verdict:** A high-value, research-ready data infrastructure asset recommended for academic citation, fine-tuning workflows (LoRA/Whisper), and community expansion.
+
+## 📊 Dataset Statistics & Baseline Benchmarks
+
+* **Total Clean Utterances:** `440` (`metadata_clean.jsonl`)
+* **Total Word Count:** `3,393` words (Average: `7.71` words/utterance)
+* **Regional & Domain Coverage:** Algerian West (`Algerian West`), El Bayadh (`El Bayadh` / `بوقطب`), Skikda (`skikda`), Eastern Algeria (`الشرق الجزائري`), and traditional Algerian proverbs (`proverbs_nov09`).
+* **Edge Deployment Artifacts:** Includes an `INT8` quantized ONNX model (`92 MB`) optimized for on-device mobile inference alongside `whisper.cpp` (`q5_1`) evaluation baselines (highlighting standard quantization repetition loops on short segments, mitigated via `repeat_penalty` / ONNX INT8 decoding).
