@@ -65,3 +65,5 @@ raw_text = res.stdout.strip()
 clean_text = re.sub(r"\b(\S+)(?:\s+\1){2,}.*$", r"\1", raw_text)
 print("📝 النص المفرّغ:\n" + clean_text)
 print(f"⏱️ زمن التنفيذ الإجمالي: {time.time() - t0:.1f} ثانية")
+
+if os.path.exists(tmp_wav): os.remove(tmp_wav)
